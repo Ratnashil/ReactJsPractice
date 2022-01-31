@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- React cdn in html -->
+     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+     <!-- Load Babel -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+     <title>first Reaction</title>
+     <style>
+         #root{
+             background-color: brown;
+         }
+         #root h1{
+             color: black;
+             font-size: 400px;
+         }
+     </style>
+ </head>
+ <body>
+     <div id="root"></div>
+     <script type="text/babel">
+            ReactDOM.render(
+                <h1>First React App</h1>,
+                document.getElementById("root"));
+     </script>
+ </body>
+ </html>
